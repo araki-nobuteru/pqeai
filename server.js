@@ -29,4 +29,4 @@ server.get("/teste/foo", (req, res, next) => {
     next();
 });
 
-server.listen(DEFAULT_PORT);
+server.listen(process.env.PORT || DEFAULT_PORT);
