@@ -1,0 +1,30 @@
+{
+  "name": "pqeai",
+  "version": "1.0.0",
+  "description": "Back-end do projeto 'Pra Que Eu Aprendo Isso?'",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/araki-nobuteru/pqeai.git"
+  },
+  "keywords": [
+    "pqeai",
+    "educacao",
+    "estudo",
+    "laboratorio"
+  ],
+  "author": "Flavio Araki, Tiago Maluta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/araki-nobuteru/pqeai/issues"
+  },
+  "homepage": "https://github.com/araki-nobuteru/pqeai#readme",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "mongoose": "^4.13.4",
+    "restify": "^6.3.2"
+  }
+}
