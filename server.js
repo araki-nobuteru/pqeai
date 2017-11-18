@@ -3,7 +3,7 @@
 const bunyan = require("bunyan");
 const restify = require("restify");
 
-const DEFAULT_PORT = 9095;
+const DEFAULT_PORT = 80;
 const serverOptions = {
     name: "pqeai-server"
 };
