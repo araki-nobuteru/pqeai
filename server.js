@@ -25,7 +25,7 @@ server.post("teste/post", (req, res, next) => {
 
     res.send(200, a);
 
-    next();
+    return next();
 });
 
 server.get("/teste/foo", (req, res, next) => {
@@ -33,7 +33,7 @@ server.get("/teste/foo", (req, res, next) => {
         a: "hello!"
     });
 
-    next();
+    return next();
 });
 
 server.listen(process.env.PORT || DEFAULT_PORT);
