@@ -12,6 +12,13 @@ let server = restify.createServer(serverOptions);
 
 // server.use(restify.plugins.CORS());
 server.use(restify.plugins.jsonBodyParser());
+server.use(
+    function crossOrigin(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "X-Requested-With");
+        return next();
+    }
+);
 
 server.post("teste/post", (req, res, next) => {
     let a = req.body;
